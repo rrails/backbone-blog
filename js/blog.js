@@ -1,5 +1,6 @@
 $(document).ready(function(){ //wait until document is ready. we are waiting for dom
 //dictionary of  templates
+//this has the html code
   var templates = {
     appView: '<h1>Recent Posts</h1><ul id="posts"></ul>',
     blogList: '<a href="#posts/{{ slug }}">{{ title }}</a>',
@@ -25,7 +26,7 @@ $(document).ready(function(){ //wait until document is ready. we are waiting for
   });
 
 // our blog list template just had title. when we create a view we create the li's. this is inside a ul.
-
+//the views in backbone allow you to do a lot more logic then the views we are use to in ruby
   var PostListView = Backbone.View.extend({
     tagName: 'li',
 // click event call view
